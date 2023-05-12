@@ -12,12 +12,13 @@ public class GeometryUI {
 //    JTextField textField = new JTextField();
 
     public void mainUI(){
-        frame.setSize(450,500);
+        frame.setSize(300,300);
         frame.setLayout(new GridLayout(2,1));
         frame.setVisible(true);
-
-        frame.add(Physics);
+        
         frame.add(PhyFormulas);
+        frame.add(Physics);
+        
 //        frame.add(textField);
 
         Physics.addActionListener(new ActionListener() {
@@ -37,16 +38,17 @@ public class GeometryUI {
 //    JTextField textField= new JTextField();
 
     public void PhysicsUI() {
-        frameNew.setSize(450, 500);
+        frameNew.setSize(300, 300);
         frameNew.setLayout(new GridLayout(8, 1));
         frameNew.setVisible(true);
 
+        frameNew.add(text);
         frameNew.add(kineticEnergy);
         frameNew.add(potentialEnergy);
         frameNew.add(perimeterOfRectangle);
         frameNew.add(perimeterOfSquare);
         frameNew.add(perimeterOfTriangle);
-        frameNew.add(text);
+        
 
         kineticEnergy.addActionListener(new ActionListener() {
             @Override
@@ -91,7 +93,7 @@ public class GeometryUI {
 
     public void mathsUI2()
     {
-        frameA.setSize(450,500);
+        frameA.setSize(300,300);
         frameA.setLayout(new GridLayout(3,1));
         frameA.setVisible(true);
 //        frameA.add(textFieldbre);
@@ -127,7 +129,7 @@ public class GeometryUI {
 
     public void mathsUI3()
     {
-        frameB.setSize(450,500);
+        frameB.setSize(300,300);
         frameB.setLayout(new GridLayout(3,1));
         frameB.setVisible(true);
 
@@ -161,7 +163,7 @@ public class GeometryUI {
 
     public void mathsUI4()
     {
-        frameC.setSize(450,500);
+        frameC.setSize(300,300);
         frameC.setLayout(new GridLayout(3,1));
         frameC.setVisible(true);
 
@@ -194,7 +196,7 @@ public class GeometryUI {
 
     public void mathsUI5()
     {
-        frameD.setSize(450,500);
+        frameD.setSize(300,300);
         frameD.setLayout(new GridLayout(5,1));
         frameD.setVisible(true);
 
@@ -228,7 +230,7 @@ public class GeometryUI {
 
     public void mathsUI6()
     {
-        frameE.setSize(450,500);
+        frameE.setSize(300,300);
         frameE.setLayout(new GridLayout(4,1));
         frameE.setVisible(true);
 
