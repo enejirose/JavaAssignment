@@ -16,5 +16,7 @@ public class Geometry extends Physics {
     float WorkDone(float force,float distance){
         return multiply(force, distance);
     }
-
+    public double Density(double mass, double volume){
+        return Divide(mass, volume);
+    }
 }
