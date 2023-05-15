@@ -31,9 +31,9 @@ public class GeometryUI {
     JFrame frameNew = new JFrame("Window");
     JButton kineticEnergy =new JButton("Kinetic Energy");
     JButton potentialEnergy =new JButton("Potential Energy");
-    JButton perimeterOfRectangle =new JButton("Perimeter of a rectangle");
-    JButton perimeterOfSquare =new JButton("Perimeter of a square");
-    JButton perimeterOfTriangle =new JButton("Perimeter of a triangle");
+    JButton Force =new JButton("Calculate Force");
+    JButton Acceleration =new JButton("calculate Acceleration");
+    JButton WorkDone =new JButton("Calculate WorkDone");
     JLabel text = new JLabel(" Pick the action you would like to perform");
 //    JTextField textField= new JTextField();
 
@@ -45,9 +45,9 @@ public class GeometryUI {
         frameNew.add(text);
         frameNew.add(kineticEnergy);
         frameNew.add(potentialEnergy);
-        frameNew.add(perimeterOfRectangle);
-        frameNew.add(perimeterOfSquare);
-        frameNew.add(perimeterOfTriangle);
+        frameNew.add(Force);
+        frameNew.add(Acceleration);
+        frameNew.add(WorkDone);
         
 
         kineticEnergy.addActionListener(new ActionListener() {
@@ -63,19 +63,19 @@ public class GeometryUI {
                 mathsUI3();
             }
         });
-        perimeterOfRectangle.addActionListener(new ActionListener() {
+        Force.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 mathsUI4();
             }
         });
-        perimeterOfSquare.addActionListener(new ActionListener() {
+        Acceleration.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 mathsUI5();
             }
         });
-        perimeterOfTriangle.addActionListener(new ActionListener() {
+        WorkDone.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 mathsUI6();
